@@ -150,6 +150,10 @@ img {
     padding-top: 0;
     padding: 188px 0;
     background-color: var(--navyblue);
+    border-image: ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .title {
     font-size: 56px;
