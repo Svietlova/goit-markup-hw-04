@@ -225,6 +225,7 @@ img {
     letter-spacing: 0.4px;
     color: var(--navyblue);
     margin-bottom: 8px;
+    margin-top: 8px;
     text-align: start;
 }
 .text {
@@ -299,7 +300,36 @@ img {
     letter-spacing: 0.02em;
     color: var(--slate);
     text-align: center;
+    margin-bottom: 8px;
 }
+.socials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0 16px;
+}
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: var(--iris);
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--ocean);
+}
+.socials {
+    fill: var(--white);
+}
+
+
 
 /* FOOTER STYLES */
 .footer {
