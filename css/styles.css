@@ -4,18 +4,7 @@
 *::after {
     box-sizing: border-box;
 }
-.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
 
-}
-.container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 :root {
     --iris: #4D5AE5;
     --ocean: #404BBF;
@@ -25,10 +14,13 @@
     --cloud: #F4F4FD;
     --cornflover: #E7E9FC;
     --grey: #2e2f42;
+    --light-slate: #8E8F99;
 
     --indent: 24px;
     --items: 3;
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--slate);
@@ -71,11 +63,25 @@ img {
     max-width: 100%;
     height: auto;
 }
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* HEADER STYLES */
 .header {
     background-color: inherit;
     border-bottom: 1px solid var(--cornflover);
+
+    /* position: fixed; */
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -107,6 +113,8 @@ img {
     padding-bottom: 24px;
 }
 .nav-link {
+    position: relative;
+
     color: var(--navyblue);
     font-weight: 500;
     font-size: 16px;
@@ -116,6 +124,17 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+/* .nav-link::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 4px;
+} */
+
+/* :current */
+
 .nav-link:hover,
 .nav-link:active {
     color: var(--ocean);
@@ -318,6 +337,7 @@ img {
     height: 40px;
 
     background-color: var(--iris);
+    color: var(--white);
     border-radius: 50%;
 }
 
@@ -326,10 +346,44 @@ img {
     background-color: var(--ocean);
 }
 .socials {
-    fill: var(--white);
+    fill: currentColor;
 }
 
-
+/* CUSTOMERS STYLES */
+.cust-sect {
+    padding: 0;
+}
+.cust-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-align: center;
+    color: var(--navyblue);
+    text-transform: capitalize;
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+.cust-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+.cust-item {
+    fill: var(--light-slate);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+.cust-link {
+    color: currentColor;
+}
+.cust-link:hover .cust-item,
+.cust-link:focus .cust-item {
+    fill: var(--ocean);
+    border-color: var(--ocean);
+}
 
 /* FOOTER STYLES */
 .footer {
