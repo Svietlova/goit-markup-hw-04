@@ -530,6 +530,12 @@ img {
 .list {
     list-style: none;
 }
+.filter-item {
+    transition: color var(--animation), 
+    background-color var(--animation), 
+    border-color var(--animation),
+    box-shadow var(--animation);
+}
 .filter-btn {
     color: var(--iris);
     background-color: var(--cloud);
@@ -544,7 +550,9 @@ img {
     border: 1px solid var(--cornflover);
     padding: 12px 24px;
 
-    transition: color var(--animation), background-color var(--animation), border-color var(--animation);
+    transition: color var(--animation), 
+    background-color var(--animation), 
+    border-color var(--animation);
 }
 .filter-btn:hover,
 .filter-btn:active {
@@ -564,12 +572,13 @@ img {
 }
 .serv-link {
     display: block;
+    transition: box-shadow var(--animation);
 }
 .serv-link:hover,
 .serv-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card-list {
     display: flex;
@@ -596,12 +605,12 @@ img {
     background-color: var(--iris);
 
     transform: translateY(100%);
-    transition: transform var(--animation), background-color var(--animation), box-shadow var(--animation);
+    transition: transform var(--animation);
 }    
 .serv-card:hover .overlay-text {
     transform: translateY(0%);
 }
-.serv-card:hover .overlay-text {
+.serv-card:focus .overlay-text {
     transform: translateX(0%);
 }
 .serv-card {
