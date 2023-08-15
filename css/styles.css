@@ -575,6 +575,10 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.serv-link:hover .overlay-text,
+.serv-link:focus .overlay-text {
+    transform: translateY(0%);
+}
 .card-list {
     display: flex;
     flex-wrap: wrap;
@@ -602,10 +606,6 @@ img {
     transform: translateY(100%);
     transition: transform var(--animation);
 }    
-.serv-card:hover .overlay-text,
-.serv-card:focus .overlay-text {
-    transform: translateY(0%);
-}
 .serv-card {
     flex-basis: calc((100% - 48px) / 3);
     transition: box-shadow var(--animation);
