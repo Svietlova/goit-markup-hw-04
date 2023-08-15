@@ -531,10 +531,7 @@ img {
     list-style: none;
 }
 .filter-item {
-    transition: color var(--animation), 
-    background-color var(--animation), 
-    border-color var(--animation),
-    box-shadow var(--animation);
+    transition: color var(--animation), background-color var(--animation), border-color var(--animation), box-shadow var(--animation);
 }
 .filter-btn {
     color: var(--iris);
@@ -550,9 +547,7 @@ img {
     border: 1px solid var(--cornflover);
     padding: 12px 24px;
 
-    transition: color var(--animation), 
-    background-color var(--animation), 
-    border-color var(--animation);
+    transition: color var(--animation), background-color var(--animation), border-color var(--animation), box-shadow var(--animation);
 }
 .filter-btn:hover,
 .filter-btn:active {
@@ -607,11 +602,9 @@ img {
     transform: translateY(100%);
     transition: transform var(--animation);
 }    
-.serv-card:hover .overlay-text {
-    transform: translateY(0%);
-}
+.serv-card:hover .overlay-text,
 .serv-card:focus .overlay-text {
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 .serv-card {
     flex-basis: calc((100% - 48px) / 3);
